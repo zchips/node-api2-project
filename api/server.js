@@ -8,9 +8,9 @@ const postsRouter = require('./posts/posts-router');
 
 server.use(express.json());
 
-server.use('/api/posts', postsRouter);
+server.use("/api/posts", postsRouter);
 
-server.get('/', (req, res)=>{
+server.use('/', (req, res)=>{
     res.send(`<h1> Blog Posts </h1>
     <p> Welcome! Please enjoy and help facilitate an enjoyable environment!`);
 });
